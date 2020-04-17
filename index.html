@@ -32,10 +32,10 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <header class="site-header fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-          <a class="navbar-brand mb-0 h1" href="#">Filippo Fresilli</a>
+          <a class="navbar-brand mb-0 h1" href="#home">Filippo Fresilli</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -47,19 +47,25 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Products</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#referrals">Referrals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -67,7 +73,9 @@
       </nav>
     </header>
     <main class="mt-90px">
+      <!------- Home ------->
       <div
+        id="home"
         class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
       >
         <div class="col-md-8 p-lg-5 mx-auto">
@@ -80,6 +88,7 @@
           </p>
         </div>
       </div>
+      <!------- Something -------->
       <div
         class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
       >
@@ -91,14 +100,42 @@
           </p>
           <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div
-          class="product-device product-device-2 shadow-sm d-none d-md-block"
-        ></div>
+      </div>
+      <!------- Referrals -------->
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+        id="referrals"
+      >
+        <div class="col-md-8 p-lg-5 mx-auto">
+          <h2 class="display-4 font-weight-normal">My Referrals</h2>
+          <p class="lead font-weight-normal">
+            And an even wittier subheading to boot. Jumpstart your marketing
+            efforts with this example based on Apple’s marketing pages.
+          </p>
+          <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        </div>
+      </div>
+      <!------- Contact me ------->
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+        id="contact"
+      >
+        <div class="col-md-8 p-lg-5 mx-auto">
+          <h2 class="display-4 font-weight-normal">Contact me</h2>
+          <p class="lead font-weight-normal">
+            This is the right button to contact me,<br />
+            please don't make me feel alone...
+          </p>
+          <a
+            class="btn btn-outline-secondary"
+            href="mailto: filippo.fresilli@gmail.com"
+            >Contact me</a
+          >
+        </div>
       </div>
     </main>
 
-    <!-- Footer -->
+    <!-------- Footer ------->
     <footer class="container mt-auto py-5">
       <div class="row">
         <div class="col-6 col-md">
