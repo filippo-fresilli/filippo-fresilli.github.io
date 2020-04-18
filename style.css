@@ -2,10 +2,23 @@
     margin-top: 90px;
 }
 
-.color-header {
+.site-header {
     background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+}
+
+.bg-image {
+    background-image: url('assets/images/bg/joanna-kosinska-129039.jpg');
+    background-size: cover;
+    min-height: 80vh;
+  }
+
+
+
+.profile-picture {
+    background-image: url('assets/images/bg/filippofresilli_profile.jpg');
+    background-size: cover;
 }
 
 /* footer */
