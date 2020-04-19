@@ -2,6 +2,11 @@
     margin-top: 90px;
 }
 
+.py-15px {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .site-header {
     background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -13,8 +18,6 @@
     background-size: cover;
     min-height: 80vh;
   }
-
-
 
 .profile-picture {
     background-image: url('assets/images/bg/filippofresilli_profile.jpg');
