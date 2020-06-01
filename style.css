@@ -1,27 +1,64 @@
 .mt-90px {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 .py-15px {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 .bg-image {
-    background-image: url('assets/images/bg/joanna-kosinska-compressed.jpg');
-    background-size: cover;
-    min-height: 80vh;
-  }
+  background-image: url("assets/images/bg/joanna-kosinska-compressed.jpg");
+  background-size: cover;
+  min-height: 80vh;
+}
 
 .profile-picture {
-    background-image: url('assets/images/bg/filippofresilli_profile.jpg');
-    background-size: cover;
+  background-image: url("assets/images/bg/filippofresilli_profile.jpg");
+  background-size: cover;
+}
+
+/* colors referrals */
+
+.btn-cards {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+}
+
+/* mouse over link */
+.btn-cards:hover {
+  color: #fff !important;
+  background-color: #fd7b61 !important;
+  border-color: #fff !important;
+}
+
+/* coinbase */
+
+.coinbase {
+  border-color: #1652f0 !important;
+}
+
+/* visited link
+.btn-coinbase:visited {
+  background-color: green !important;
+} */
+
+/* housers */
+
+.housers {
+  border-color: #91ccc9 !important;
+}
+
+/* bondora */
+.bondora {
+  border-color: #84bfe7 !important;
 }
 
 /* footer */
