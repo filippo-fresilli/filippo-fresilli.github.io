@@ -1,341 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-
-    <!--====== Title ======-->
-    <title>Filippo Fresilli</title>
-
-    <meta name="description" content="Filippo Fresilli website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--====== Favicon Icon ======-->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
-      type="image/png"
-    />
-
-    <!--====== Style CSS ======-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <title>Filippo Fresilli</title>
+    <meta name="description" content="Filippo Fresilli — UX/UI Designer & Developer" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!------- Header -------->
-    <header class="site-header fixed-top">
-      <!------- Navbar -------->
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container">
-          <a class="navbar-brand mb-0 h1" href="#">Filippo Fresilli</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#referrals">Referrals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">📮contact me</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="mt-90px">
-      <!------- Home -------->
-      <div
-        id="home"
-        class="container d-flex align-items-center flex-wrap position-relative overflow-hidden bg-light p-0"
-      >
-        <div class="col-md p-0">
-          <picture class="">
-            <img
-              class="img-fluid"
-              src="assets/images/bg/filippofresilli_profile.jpg"
-              alt="Sex symbol with hawaiian shirt"
-            />
-          </picture>
-        </div>
-        <!-- <div class="col-6 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden profile-picture">
-    </div> -->
-        <div class="col-md bg-light p-0 text-center overflow-hidden">
-          <div class="my-3 p-3">
-            <h1 class="display-5">I'm Filippo Fresilli</h1>
-            <p class="lead">
-              Hello World, I'm a UX/UI Designer with a passion for code based in Paris, France.
-            </p>
-          </div>
-        </div>
+    <main class="bento">
+
+      <!-- Hero -->
+      <div class="card card-hero">
+        <span class="label">UX/UI Designer & Developer</span>
+        <h1>Filippo<br />Fresilli</h1>
+        <p class="sub">Designing experiences, writing code — based in Paris 🇫🇷</p>
       </div>
-      <!------- Something -------->
-      <div
-        class="container position-relative overflow-hidden p-3 p-md-5 text-center bg-light"
-      >
-        <div class="col-md-8 p-lg-5 mx-auto">
-          <h2 class="display-4 font-weight-normal">Punny headline</h2>
-          <p class="lead font-weight-normal">
-            And an even wittier subheading to boot. Jumpstart your marketing
-            efforts with this example based on Apple’s marketing pages.
-          </p>
-          <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-        </div>
+
+      <!-- Formidable -->
+      <a href="#" class="card card-formidable">
+        <span class="label">Progetto</span>
+        <h2>Formidable</h2>
+        <p class="sub">Scopri il progetto</p>
+        <span class="arrow">↗</span>
+      </a>
+
+      <!-- Posizione -->
+      <div class="card card-location">
+        <span class="emoji">📍</span>
+        <p>Paris, France</p>
       </div>
-      <!------- Referrals -------->
-      <div
-        class="container position-relative overflow-hidden text-center bg-light"
-        id="referrals"
-      >
-        <div class="p-lg-5 mx-auto">
-          <h2 class="display-4 font-weight-normal">My Referrals</h2>
-          <p class="lead font-weight-normal">
-            This is the space where I share with You my referral links. <br />
-            I will try to publish only referrals win-win.
-          </p>
-        </div>
-        <div class="row">
-          <!------- Housers -------->
-          <div class="col-sm-4 py-15px">
-            <div class="housers card">
-              <div class="card-body">
-                <h5 class="card-title">Housers</h5>
-                <p class="card-text">
-                  Invest 50€ in a real estate project,<br />
-                  we both gain 25€ more.
-                </p>
-                <a
-                  href="http://bit.ly/2mTTSeQ"
-                  class="btn btn-cards"
-                  target="_blank"
-                  >Gain 25€</a
-                >
-              </div>
-            </div>
-          </div>
-          <!------- Coinbase -------->
-          <div class="col-sm-4 py-15px">
-            <div class="coinbase card">
-              <div class="card-body">
-                <h5 class="card-title">Coinbase</h5>
-                <p class="card-text">
-                  Invest 100€ in cryptocurrencies,<br />
-                  we both gain 9€ of <br />Bitcoin.
-                </p>
-                <a
-                  href="https://www.coinbase.com/join/5890622b39e5ce7dceca5818"
-                  class="btn btn-cards"
-                  target="_blank"
-                  >Gain 9€</a
-                >
-              </div>
-            </div>
-          </div>
-          <!------- Bondora -------->
-          <div class="col-sm-4 py-15px">
-            <div class="bondora card">
-              <div class="card-body">
-                <h5 class="card-title">Bondora</h5>
-                <p class="card-text">
-                  Invest in a P2P lending platform,<br />
-                  you gain 5€ and I gain the 5% of what do you invest.
-                </p>
-                <a
-                  href="https://bondora.com/ref/filippof10"
-                  class="btn btn-cards"
-                  target="_blank"
-                  >Gain 5€</a
-                >
-              </div>
-            </div>
-          </div>
-          <!------- Others -------->
-          <div class="col-sm-4 py-15px">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Other</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-cards">Button</a>
-              </div>
-            </div>
-          </div>
-          <!------- Udemy -------->
-          <div class="col-sm-4 py-15px">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Udemy</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-cards">Button</a>
-              </div>
-            </div>
-          </div>
-          <!------- Amazon -------->
-          <div class="col-sm-4 py-15px">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-cards" target="_blank">Button</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!------- Contact me ------->
-      <div
-        class="container d-flex justify-content-center align-items-center position-relative overflow-hidden text-center bg-image"
-        id="contact"
-      >
-        <div class="">
-          <h2 class="display-4 font-weight-normal">📮</h2>
-          <p class="lead font-weight-normal">
-            Work inquiry, question or something else?
-          </p>
-          <a
-            class="btn btn-outline-dark"
-            href="mailto: filippo.fresilli@gmail.com"
-            >contact me</a
-          >
-        </div>
-      </div>
+
+      <!-- Email -->
+      <a href="mailto:filippo.fresilli@gmail.com" class="card card-email">
+        <span class="emoji">✉️</span>
+        <p>filippo.fresilli@gmail.com</p>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/filippo-fresilli" target="_blank" class="card card-social card-github">
+        <span class="social-name">GitHub</span>
+        <span class="arrow-sm">↗</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/filippofresilli/" target="_blank" class="card card-social card-linkedin">
+        <span class="social-name">LinkedIn</span>
+        <span class="arrow-sm">↗</span>
+      </a>
+
+      <!-- Behance -->
+      <a href="https://www.behance.net/filippofresilli" target="_blank" class="card card-social card-behance">
+        <span class="social-name">Behance</span>
+        <span class="arrow-sm">↗</span>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/filippo.fresilli/" target="_blank" class="card card-social card-facebook">
+        <span class="social-name">Facebook</span>
+        <span class="arrow-sm">↗</span>
+      </a>
+
     </main>
-
-    <!-------- Footer ------->
-    <footer class="container mt-auto py-4">
-      <div class="row">
-        <div class="col-6 col-md">
-          <h5>Coding</h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <!--Github-->
-              <a href="https://github.com/filippo-fresilli" target="_blank">Github</a>
-            </li>
-            <li>
-              <!--Stackoverflow-->
-              <a href="" target="_blank">Stackoverflow</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Design</h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <!--Behance-->
-              <a href="https://www.behance.net/filippofresilli" target="_blank"
-                >Behance</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Social</h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <!--Linkedin-->
-              <a
-                href="https://www.linkedin.com/in/filippofresilli/"
-                target="_blank"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <!--Facebook-->
-              <a
-                href="https://www.facebook.com/filippo.fresilli/"
-                target="_blank"
-              >
-                Facebook
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Others</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Medium</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <div class="container text-center">
-      <p>© 2020 Copyright Filippo Fresilli. All rights reserved.</p>
-    </div>
-    <!--<footer class="container">
-      <div class="d-flex justify-content-center">
-        <p>
-        <a href="https://www.linkedin.com/in/filippofresilli/" target="_blank">Linkedin</a>
-        &nbsp; | &nbsp;
-        <a href="https://www.behance.net/filippo_fre" target="_blank">Behance</a>
-        &nbsp; | &nbsp; 
-        <a href="https://github.com/filippofre" target="_blank">Github</a>
-        &nbsp; | &nbsp; 
-        <a href="" target="_blank">Stackoverflow</a>
-        &nbsp; | &nbsp; 
-        <a href="https://www.facebook.com/filippo.fresilli/" target="_blank">Facebook</a>
-        </p>
-      </div>
-      <div class="d-flex justify-content-center">
-      <p>Made on 2020 by Filippo Fresilli, during COVID-19 quarantine.</p>
-    </div>
-    </footer> -->
-
-    <!-- Optional JavaScript -->
     <script src="main.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

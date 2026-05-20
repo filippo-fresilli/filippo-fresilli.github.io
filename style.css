@@ -1,64 +1,227 @@
-.mt-90px {
-  margin-top: 90px;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.py-15px {
-  padding-top: 15px;
-  padding-bottom: 15px;
+html {
+  height: 100%;
 }
 
-.site-header {
-  background-color: rgba(0, 0, 0, 0.85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+body {
+  font-family: 'Inter', sans-serif;
+  background: #E8E8E2;
+  height: 100%;
+  width: 100%;
 }
 
-.bg-image {
-  background-image: url("assets/images/bg/joanna-kosinska-compressed.jpg");
-  background-size: cover;
-  min-height: 80vh;
+/* ── Bento grid ── */
+.bento {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 2fr 1.6fr 1.4fr;
+  grid-template-rows: 1fr 1fr 100px;
+  grid-template-areas:
+    "hero hero formidable location"
+    "hero hero formidable email"
+    "github linkedin behance facebook";
+  gap: 10px;
+  padding: 10px;
+  height: 100vh;
 }
 
-.profile-picture {
-  background-image: url("assets/images/bg/filippofresilli_profile.jpg");
-  background-size: cover;
+/* ── Base card ── */
+.card {
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  overflow: hidden;
+  position: relative;
 }
 
-/* colors referrals */
-
-.btn-cards {
-  color: #000 !important;
-  background-color: #fff !important;
-  border-color: #000 !important;
+.card:is(a):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
-/* mouse over link */
-.btn-cards:hover {
-  color: #fff !important;
-  background-color: #fd7b61 !important;
-  border-color: #fff !important;
+/* ── Labels & text ── */
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
 }
 
-/* coinbase */
-
-.coinbase {
-  border-color: #1652f0 !important;
+.sub {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6;
+  line-height: 1.5;
 }
 
-/* visited link
-.btn-coinbase:visited {
-  background-color: green !important;
-} */
-
-/* housers */
-
-.housers {
-  border-color: #91ccc9 !important;
+/* ── Hero ── */
+.card-hero {
+  grid-area: hero;
+  background: #111111;
+  color: #ffffff;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
-/* bondora */
-.bondora {
-  border-color: #84bfe7 !important;
+.card-hero .label {
+  position: absolute;
+  top: 28px;
+  left: 28px;
 }
 
-/* footer */
+.card-hero h1 {
+  font-size: clamp(52px, 5.5vw, 88px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+/* ── Formidable ── */
+.card-formidable {
+  grid-area: formidable;
+  background: #5B4FE9;
+  color: #ffffff;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.card-formidable h2 {
+  font-size: clamp(32px, 3vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.card-formidable .arrow {
+  position: absolute;
+  bottom: 24px;
+  right: 28px;
+  font-size: 42px;
+  line-height: 1;
+  transition: transform 0.18s ease;
+}
+
+.card-formidable:hover .arrow {
+  transform: translate(5px, -5px);
+}
+
+/* ── Location ── */
+.card-location {
+  grid-area: location;
+  background: #ffffff;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.emoji {
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.card-location p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ── Email ── */
+.card-email {
+  grid-area: email;
+  background: #FFF8F0;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.card-email p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  word-break: break-all;
+}
+
+/* ── Social cards ── */
+.card-social {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 24px;
+  border-radius: 16px;
+}
+
+.social-name {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.arrow-sm {
+  font-size: 18px;
+  opacity: 0.7;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.card-social:hover .arrow-sm {
+  transform: translate(3px, -3px);
+  opacity: 1;
+}
+
+.card-github   { grid-area: github;   background: #24292E; color: #fff; }
+.card-linkedin { grid-area: linkedin; background: #0A66C2; color: #fff; }
+.card-behance  { grid-area: behance;  background: #1769FF; color: #fff; }
+.card-facebook { grid-area: facebook; background: #1877F2; color: #fff; }
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .bento {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hero       hero"
+      "formidable formidable"
+      "location   email"
+      "github     linkedin"
+      "behance    facebook";
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .card-hero    { min-height: 300px; }
+  .card-formidable { min-height: 200px; }
+  .card-location,
+  .card-email   { min-height: 90px; }
+  .card-social  { min-height: 80px; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .bento {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "formidable"
+      "location"
+      "email"
+      "github"
+      "linkedin"
+      "behance"
+      "facebook";
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .card-hero h1 { font-size: 52px; }
+}
