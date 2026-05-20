@@ -22,7 +22,7 @@ body {
   grid-template-columns: 2fr 2fr 1.6fr 1.4fr;
   grid-template-rows: 1fr 1fr 100px;
   grid-template-areas:
-    "hero hero formidable location"
+    "hero hero formidable experience"
     "hero hero formidable email"
     "github linkedin behance behance";
   gap: 10px;
@@ -61,7 +61,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   opacity: 0.6;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* ── Hero ── */
@@ -69,14 +69,11 @@ body {
   grid-area: hero;
   background: #111111;
   color: #ffffff;
-  justify-content: flex-end;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 .card-hero .label {
-  position: absolute;
-  top: 28px;
-  left: 28px;
+  font-size: 12px;
 }
 
 .card-hero h1 {
@@ -84,6 +81,19 @@ body {
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.03em;
+  margin: auto 0;
+}
+
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-location {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.35;
 }
 
 /* ── Formidable ── */
@@ -117,24 +127,28 @@ body {
   transform: translate(5px, -5px);
 }
 
-/* ── Location ── */
-.card-location {
-  grid-area: location;
+/* ── Esperienza ── */
+.card-experience {
+  grid-area: experience;
   background: #ffffff;
-  flex-direction: row;
-  align-items: center;
-  gap: 14px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
 }
 
-.emoji {
-  font-size: 30px;
-  flex-shrink: 0;
+.exp-number {
+  font-size: clamp(48px, 4.5vw, 72px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #111;
 }
 
-.card-location p {
-  font-size: 15px;
-  font-weight: 600;
-  color: #222;
+.exp-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  line-height: 1.4;
 }
 
 /* ── Email ── */
@@ -144,6 +158,11 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 14px;
+}
+
+.emoji {
+  font-size: 28px;
+  flex-shrink: 0;
 }
 
 .card-email p {
@@ -189,20 +208,20 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "hero       hero"
-      "formidable formidable"
-      "location   email"
-      "github     linkedin"
-      "behance    behance";
+      "hero        hero"
+      "formidable  formidable"
+      "experience  email"
+      "github      linkedin"
+      "behance     behance";
     height: auto;
     min-height: 100vh;
   }
 
-  .card-hero    { min-height: 300px; }
+  .card-hero       { min-height: 300px; }
   .card-formidable { min-height: 200px; }
-  .card-location,
-  .card-email   { min-height: 90px; }
-  .card-social  { min-height: 80px; }
+  .card-experience,
+  .card-email      { min-height: 90px; }
+  .card-social     { min-height: 80px; }
 }
 
 /* ── Mobile ── */
@@ -212,12 +231,11 @@ body {
     grid-template-areas:
       "hero"
       "formidable"
-      "location"
+      "experience"
       "email"
       "github"
       "linkedin"
-      "behance"
-      "facebook";
+      "behance";
     gap: 8px;
     padding: 8px;
   }
