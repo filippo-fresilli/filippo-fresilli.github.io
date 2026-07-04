@@ -21,8 +21,8 @@ body {
   grid-template-rows: 80px 1fr 1fr 100px;
   grid-template-areas:
     "hero hero lang        lang"
-    "hero hero formidable  experience"
-    "hero hero ciaobricks  email"
+    "hero hero projects    experience"
+    "hero hero projects    email"
     "github linkedin behance behance";
   gap: 10px;
   padding: 10px;
@@ -91,66 +91,59 @@ body {
   opacity: 0.35;
 }
 
-/* ── Formidable ── */
-.card-formidable {
-  grid-area: formidable;
-  background: #5B4FE9;
-  color: #ffffff;
-  cursor: pointer;
-  gap: 8px;
+/* ── Progetti (icone app) ── */
+.card-projects {
+  grid-area: projects;
+  background: #ffffff;
+  gap: 16px;
 }
 
-.card-formidable h2 {
-  font-size: clamp(28px, 2.5vw, 44px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+.app-grid {
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
-.card-formidable .arrow {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  font-size: 38px;
-  line-height: 1;
-  transition: transform 0.18s ease;
-}
-
-.card-formidable:hover .arrow {
-  transform: translate(5px, -5px);
-}
-
-/* ── ciaobricks ── */
-.card-ciaobricks {
-  grid-area: ciaobricks;
-  background: linear-gradient(135deg, #FA8033, #ED454C);
-  color: #ffffff;
-  cursor: pointer;
-  gap: 8px;
-}
-
-.card-ciaobricks h2 {
-  font-size: clamp(28px, 2.5vw, 44px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  flex: 1;
+.app-tile {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
-.card-ciaobricks .arrow {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  font-size: 38px;
-  line-height: 1;
-  transition: transform 0.18s ease;
+.app-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.card-ciaobricks:hover .arrow {
-  transform: translate(5px, -5px);
+.app-tile:hover .app-icon {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+}
+
+.app-icon-formidable {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #6A5CFF, #5B4FE9);
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.app-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
 }
 
 /* ── Esperienza ── */
@@ -289,8 +282,7 @@ body {
     grid-template-areas:
       "hero        hero"
       "lang        lang"
-      "formidable  formidable"
-      "ciaobricks  ciaobricks"
+      "projects    projects"
       "experience  email"
       "github      linkedin"
       "behance     behance";
@@ -299,8 +291,7 @@ body {
   }
 
   .card-hero        { min-height: 300px; }
-  .card-formidable  { min-height: 200px; }
-  .card-ciaobricks  { min-height: 200px; }
+  .card-projects    { min-height: 200px; }
   .card-lang        { min-height: 80px; }
   .card-experience,
   .card-email       { min-height: 90px; }
@@ -314,8 +305,7 @@ body {
     grid-template-areas:
       "hero"
       "lang"
-      "formidable"
-      "ciaobricks"
+      "projects"
       "experience"
       "email"
       "github"
