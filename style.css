@@ -22,7 +22,7 @@ body {
   grid-template-areas:
     "hero hero lang        lang"
     "hero hero formidable  experience"
-    "hero hero formidable  email"
+    "hero hero ciaobricks  email"
     "github linkedin behance behance";
   gap: 10px;
   padding: 10px;
@@ -119,6 +119,37 @@ body {
 }
 
 .card-formidable:hover .arrow {
+  transform: translate(5px, -5px);
+}
+
+/* ── ciaobricks ── */
+.card-ciaobricks {
+  grid-area: ciaobricks;
+  background: linear-gradient(135deg, #FA8033, #ED454C);
+  color: #ffffff;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.card-ciaobricks h2 {
+  font-size: clamp(28px, 2.5vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.card-ciaobricks .arrow {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: 38px;
+  line-height: 1;
+  transition: transform 0.18s ease;
+}
+
+.card-ciaobricks:hover .arrow {
   transform: translate(5px, -5px);
 }
 
@@ -259,6 +290,7 @@ body {
       "hero        hero"
       "lang        lang"
       "formidable  formidable"
+      "ciaobricks  ciaobricks"
       "experience  email"
       "github      linkedin"
       "behance     behance";
@@ -268,6 +300,7 @@ body {
 
   .card-hero        { min-height: 300px; }
   .card-formidable  { min-height: 200px; }
+  .card-ciaobricks  { min-height: 200px; }
   .card-lang        { min-height: 80px; }
   .card-experience,
   .card-email       { min-height: 90px; }
@@ -282,6 +315,7 @@ body {
       "hero"
       "lang"
       "formidable"
+      "ciaobricks"
       "experience"
       "email"
       "github"
