@@ -21,8 +21,8 @@ body {
   grid-template-rows: 80px 1fr 1fr 100px;
   grid-template-areas:
     "hero hero lang        lang"
-    "hero hero projects    experience"
-    "hero hero projects    email"
+    "hero hero projects    projects"
+    "hero hero experience  email"
     "github linkedin behance behance";
   gap: 10px;
   padding: 10px;
